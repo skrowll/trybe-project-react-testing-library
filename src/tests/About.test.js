@@ -20,7 +20,7 @@ describe('Conjunto de Testes do Componente About.js', () => {
     const paragraphs = screen.getAllByText(/pokémons/i);
     expect(paragraphs).toHaveLength(2);
   });
-  test('Verifica se a página contém um h2 com o texto "About Pokédex"', () => {
+  test('Verifica se a página contém uma imagem de uma Pokédex', () => {
     const img = screen.getByRole('img');
     expect(img).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png');
   });
